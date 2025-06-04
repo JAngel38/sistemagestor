@@ -9,6 +9,7 @@ def conectar_bd(usuario, clave, base_datos):
             database="gestpro1"
         )
         return conn
+        
     except mysql.connector.Error as err:
         print("Error:", err)
         return None
